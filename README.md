@@ -64,7 +64,7 @@ div#ad-placement ul > li > a { }
 .ad-placement--link { }
 </pre>
 
-<p>Never use !important to overide a style, if !important is needed then your selectors are too specific and should be refactored. However The !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to overide all other styles. For example, when adding validation styles to form feilds.</p>
+<p>Never use !important to overide a style, if !important is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to overide all other styles. For example, when adding validation styles to form feilds.</p>
 
 <h3>CSS style guide</h3>
 <p>Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be aggreed upon. </p>
