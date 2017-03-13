@@ -1,4 +1,4 @@
-<h1>Best Practice Front End Developement</h1> -- rough draft ---
+<h1>Best Practice Front End Developement</h1> -- rough draft --
 
 <h2>Responsive Web Design</h2>
 
@@ -35,8 +35,19 @@
 <h2>CSS Best Practices</h2>
 
 <h3>CSS selectors</h3>
-<p>Use a modular/component based approach to css, favor low specificity in selectors:</p>
-  
+
+<p>Favor low specificity in selectors:</p>
+
+<pre>
+/* BAD */
+div#main-container { } 
+
+/* Good */
+.main-container { } 
+</pre>
+<p>Prefer classes over id's, classes have a lower specificity and can be overiden, id's can only be overiden by !important tags or inline styles. Never use !important </p>
+
+
 <h3>CSS style guide</h3>
 <p>Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be aggreed upon. </p>
   
