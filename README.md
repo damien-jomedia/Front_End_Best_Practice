@@ -34,7 +34,7 @@
   
 <h2>CSS Best Practices</h2>
 
-<h3>CSS selectors</h3>
+<h3>CSS selectors general guidelines:</h3>
 
 <p>Prefer classes over id's, classes have a lower specificity and can be overriden, id's can only be overriden by !important tags or inline styles. </p>
 
@@ -53,11 +53,12 @@ div#ad-placement { }
  .action-btn {
     background: red;
  }
- .ad-placement .action-btn {
-    background: green;
- }
  .action-btn.is-active {
-    background: blue !important; 
+    background: blue !important; // action button must be blue when active 
+ }
+ 
+ .ad-placement .action-btn {
+    background: green; // without !important tag button would stay green if is-active class is applied
  }
 </pre>
 
