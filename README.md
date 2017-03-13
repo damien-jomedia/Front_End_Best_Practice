@@ -40,8 +40,8 @@
 <p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
   <li>
-    responsive interactions:
-    <p>Show appropriate response to a user interaction, a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.</p>
+    Responsive interactions:
+    <p>Show appropriate response to a user interaction. For example: a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.</p>
   </li>
   <li>Forms: 
   <p>User interaction with form feilds should be validated, provide error messages for inputs filled out with invalid info.</p>
