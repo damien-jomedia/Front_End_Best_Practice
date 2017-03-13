@@ -136,10 +136,18 @@ div#ad-placement ul > li > a { }
 
 <p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
 
-
 <ul>
   <li><a href="http://eslint.org/">Eslint</a> for es5, es6</li>
   <li><a href="https://palantir.github.io/tslint/">Tslint</a> for developers using Typescript</li>
+</ul>
+
+<h3>Unit testing</h3>
+
+<p>All new code should be covered by a unit test. Pull requests will be rejected if unit tests are missing or fail.</p>
+
+<ul>
+<li><a href="https://mochajs.org/">Mocha js</a>is a test framework running on Node.js and in the browser.</li>
+<li><a href="http://chaijs.com/">Chai js</a> is a BDD / TDD assertion library for node.<li>
 </ul>
 
 <p>Automate processes, testing, building.</p>
@@ -162,7 +170,6 @@ div#ad-placement ul > li > a { }
 <li><a href="https://babeljs.io/">Babel</a></li>
 </ul>
  
- 
 <h3>Angular Style Guide</h3>
 
 <ul>
@@ -170,17 +177,4 @@ div#ad-placement ul > li > a { }
 <li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide</a></li>
 </ul>
 
-
-<h3>Unit testing</h3>
-
-<p>All new code should be covered by a unit test. Pull requests will be rejected if unit tests are missing or fail.</p>
-
-<ul>
-<li></li>
-</ul>
 --- rough draft ---
-
- 
-reference best practice doc:
-<a href="https://isobar-idev.github.io/code-standards/">https://isobar-idev.github.io/code-standards/</a>
-<a href="https://github.com/bendc/frontend-guidelines">https://github.com/bendc/frontend-guidelines</a>
