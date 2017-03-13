@@ -122,6 +122,8 @@ div#ad-placement ul > li > a { }
 
 <p>Team should be using a linter to ensure coding style conformity.</p>
 
+<p>Reference guide: <a href="https://github.com/ryanmcdermott/clean-code-javascript">Clean Code</a>.</p>
+
 --- Examples of ES6 code standards to follow ---
 
 -pure functions
@@ -146,8 +148,8 @@ div#ad-placement ul > li > a { }
 <p>All new code should be covered by a unit test. Pull requests will be rejected if unit tests are missing or fail.</p>
 
 <ul>
-<li><a href="https://mochajs.org/">Mocha js</a>is a test framework running on Node.js and in the browser.</li>
-<li><a href="http://chaijs.com/">Chai js</a> is a BDD / TDD assertion library for node.<li>
+<li><a href="https://mochajs.org/">Mocha js</a> a test framework running on Node.js and in the browser.</li>
+<li><a href="http://chaijs.com/">Chai js</a> a BDD / TDD assertion library for node.</li>
 </ul>
 
 <p>Automate processes, testing, building.</p>
@@ -173,8 +175,9 @@ div#ad-placement ul > li > a { }
 <h3>Angular Style Guide</h3>
 
 <ul>
-<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">Angular 1.* style guide</a></li>
-<li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">Angular 1.* style guide.</a></li>
+<li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide.</a></li>
+<li><a href="https://gotwarlost.github.io/istanbul/">Instanbul js</a> code coverage tool.</li>
 </ul>
 
 --- rough draft ---
