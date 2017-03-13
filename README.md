@@ -12,6 +12,14 @@
   <li><a href="http://zurb.com/word/mobile-first">Mobile First</a></li>
 </ul>
 
+<h3>Best Practice images</h3> -- needs elaboration --
+<p>Best practice for loading images across devices and image optimization</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive image</a></li>
+<li>All images should be saved to a CDN</li>
+<li>GZIP/compress images</li>
+<li>Optimize images</li>
+</ul>
 <h3>Cross browser/device developer Tools</h3>
 
 <p>All integrated designs must be tested across devices, browsers and screen sizes. Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p> 
@@ -23,7 +31,7 @@
     <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html">XCode Simulator (OSX)</a> </li>
   </ul>
  
-<h2>General UI/UX Integration best practices </h2>
+<h2>General UI/UX Integration best practices </h2> -- needs elaboration --
 
 <p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
@@ -68,7 +76,27 @@ div#ad-placement ul > li > a { }
   <li><a href="https://acss.io">Atomic CSS</a></li>
 </ul>
 
-<h2>Javascript</h2>
+<h2>Javascript</h2> -- needs elaboration --
+
+<h3>Javascript code standards:</h3>
+
+--- Examples of ES6 code standards to follow ---
+
+-pure functions
+-immutable data
+
+-flux pattern
+
+--- Examples of Typescript coding samples ---
+
+<p>Team should be following a styleguide, pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
+<p>Team should also be using a linter to ensure coding style conformity</p>
+
+<ul>
+  <li><a href="http://eslint.org/">Eslint</a> for es5, es6</li>
+  <li><a href="https://palantir.github.io/tslint/">Tslint</a> for developers using Typescript</li>
+</ul>
+
 <p>Automate processes, testing, building.</p>
 
 <h3>Build/Bundler tools</h3>
@@ -92,23 +120,11 @@ div#ad-placement ul > li > a { }
  
 <h3>Angular Style Guide</h3>
 
-<p>Team should be following a styleguide, pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
-
 <ul>
 <li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">Angular 1.* style guide</a></li>
 <li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide</a></li>
 </ul>
 
-<h3>Javascript code standards:</h3>
-
---- Examples of ES6 code standards to follow ---
-
--pure functions
--immutable data
-
--flux pattern
-
---- Examples of Typescript coding samples ---
 
 <h3>Unit testing</h3>
 
