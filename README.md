@@ -90,7 +90,7 @@ div#ad-placement ul > li > a { }
   
   const getUserList = () => { 
       return fetch('http://somedomain.com/api/users/list')
-                .then(respons => resonse.json);
+                .then(respons => resonse.json());
   };
   
   const sendMessage = (message) => {
