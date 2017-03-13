@@ -160,7 +160,7 @@ div#ad-placement ul > li > a { }
   
 </pre>
 
-<p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz"></a>What is a Pure Function?</p>
+<p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz">What is a Pure Function?</a></p>
 
 <h4>Higher Order Functions</h4>
 -- expand section ---
