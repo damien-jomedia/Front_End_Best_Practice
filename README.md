@@ -120,7 +120,7 @@ div#ad-placement ul > li > a { }
 
 <ul>
 <li><a href="http://redux.js.org/docs/introduction/">Redux documentation</a></li>
-<li><a href="https://egghead.io/courses/getting-started-with-redux">Redux Tutorial</a><li>
+<li><a href="https://egghead.io/courses/getting-started-with-redux">Redux Tutorial</a></li>
 </ul>
 
 <p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
