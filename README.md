@@ -124,8 +124,52 @@ div#ad-placement ul > li > a { }
 
 --- Examples of ES6 code standards to follow ---
 
--pure functions
--immutable data
+<h3>Functional Javascript</h3>
+
+<p>Favor a functional programming approach when coding in Javascript:</p>
+
+<h4>Pure Functions</h4>
+
+<p>A pure function is a function where the return value is only determined by its input values, without observable side effects.</p>
+
+<pre>
+  /*
+  * Pure Function, passing the same arguments should return the same output
+  */
+  
+  const addNumbers = (x, y) => x + y;
+  
+  addNumbers(1, 2); // 3 
+  addNumbers(1, 2); // 3 
+  addNumbers(5, 6); // 11
+  addNumbers(5, 6); // 11
+  
+  /*
+  * Impure function, modifies state external to function, or relies on state external to function
+  */
+  
+  let myNumber = 8;
+  
+  const addNumbersImpure = (x) =>  x + myNumber;
+
+  addNumbersImpure(5); // 13 initial result
+  
+  myNumerber = 12; // external state changed
+  
+  addNumbersImpure(5); // 17, result has changed, results are inconsistent and can't be predicted
+  
+</pre>
+
+<p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz"></a>What is a Pure Function?</p>
+
+<h4>Higher Order Functions</h4>
+-- expand section ---
+<ul>
+<li>Map</li>
+<li>Reduce</li>
+<li>Filter</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=BMUiFMZr7vk">Higher order functions tutorial</a></p>
 
 <p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
 
@@ -160,9 +204,8 @@ div#ad-placement ul > li > a { }
 <li><a href="http://chaijs.com/">Chai js</a> a BDD / TDD assertion library for node.</li>
 </ul>
 
-<p>Automate processes, testing, building.</p>
-
 <h3>Build/Bundler tools</h3>
+<p>Automate processes, testing, building.</p>
 <ul>
   <li><a href="https://www.npmjs.com/package/fuse-box">FuseBox</a></li>
   <li><a href="https://webpack.github.io/">Webpack</a></li>
