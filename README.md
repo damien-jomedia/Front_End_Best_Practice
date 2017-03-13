@@ -12,7 +12,7 @@
   <li><a href="http://zurb.com/word/mobile-first">Mobile First</a></li>
 </ul>
 
-<h3>Best Practice images</h3> -- needs elaboration --
+<h3>Best Practice images</h3> -- expand section --
 <p>Best practice for loading images across devices and image optimization</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive image</a></li>
@@ -22,7 +22,7 @@
 </ul>
 <h3>Cross browser/device developer Tools</h3>
 
-<p>All integrated designs must be tested across devices, browsers and screen sizes. At minimum the top 10 screen sizes from our user analytics should be covered</p>
+<p>All integrated designs must be tested across devices, browsers and screen sizes. At minimum the top 10 screen sizes from our user analytics should be covered.</p>
 
 <h4>Testing options:</h4>
 
@@ -35,7 +35,7 @@
     <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html">XCode Simulator (OSX)</a> </li>
   </ul>
  
-<h2>General UI/UX Integration best practices </h2> -- needs elaboration --
+<h2>General UI/UX Integration best practices </h2> -- expand this section --
 
 <p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
@@ -117,6 +117,8 @@ div#ad-placement ul > li > a { }
 </pre>
 
 <p>Don't Repeat Yourself. If code is being duplicated multiple times then it needs to be refactored into a new method.</p>
+
+<p>Keep method lengths short, if your method is 150+ lines of code this should be refactored and broken down into smaller methods.</p>
 
 <p>Team should be using a linter to ensure coding style conformity.</p>
 
