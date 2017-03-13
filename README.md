@@ -129,7 +129,11 @@ div#ad-placement ul > li > a { }
 -pure functions
 -immutable data
 
--Redux pattern instead of MV*
+<h3>Javascript client Architecture</h3>
+
+<p>With Angular 1 we are using a MV* architecture (Angular MVWhatever), this worked well when the app was small, but did not scale well. Too many controllers could modify state, creating hard to track mutations in the state. For Angular 2 we are switching to the Redux pattern. </p>
+
+<img src="https://camo.githubusercontent.com/1281ff81bc002657d6689c6d667cd9e3e92401fa/68747470733a2f2f63646e2e6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f72656475782d61727469636c652d332d30332e737667">
 
 <ul>
 <li><a href="http://redux.js.org/docs/introduction/">Redux documentation</a></li>
