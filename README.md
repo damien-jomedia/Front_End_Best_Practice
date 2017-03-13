@@ -36,16 +36,40 @@
 
 <h3>CSS selectors</h3>
 
-<p>Favor low specificity in selectors:</p>
+<p>Prefer classes over id's, classes have a lower specificity and can be overriden, id's can only be overriden by !important tags or inline styles. </p>
 
 <pre>
 /* BAD */
-div#main-container { } 
+div#ad-placement { } 
 
-/* Good */
-.main-container { } 
+/* GOOD */
+.ad-placement { } 
 </pre>
-<p>Prefer classes over id's, classes have a lower specificity and can be overiden, id's can only be overiden by !important tags or inline styles. Never use !important </p>
+
+<p>Never use !important to overide a style, if !important is needed then your selectors are too specific and should be refactored. However The !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to overide all other styles:</p>
+
+<pre>
+ /* Acceptable use of !important */
+ .action-btn {
+    background: red;
+ }
+ .ad-placement .action-btn {
+    background: green;
+ }
+ .action-btn.is-active {
+    background: blue !important; 
+ }
+</pre>
+
+<p>Favor low specificity in selectors, try not to nest selectors more than 3 deep, create a new class if needed</p>
+
+<pre>
+/* BAD */
+div#ad-placement ul > li > a { } 
+
+/* GOOD */
+.ad-placement--link { }
+</pre>
 
 
 <h3>CSS style guide</h3>
