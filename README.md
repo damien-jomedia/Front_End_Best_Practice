@@ -133,7 +133,9 @@ div#ad-placement ul > li > a { }
 
 <p>With Angular 1 we are using a MV* architecture (Angular MVWhatever), this worked well when the app was small, but did not scale well. For Angular 2 we are switching to the Redux pattern. </p>
 
+<h4>Redux Pattern:</h4>
 <img src="http://blog.ng-book.com/wp-content/uploads/2016/07/redux-diagram.png">
+<p>One store for the state, Action is dispatched from component triggering a change to the state, all components subrscribed to the state are updated with the new state.</p>
 
 <img src="https://camo.githubusercontent.com/1281ff81bc002657d6689c6d667cd9e3e92401fa/68747470733a2f2f63646e2e6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f72656475782d61727469636c652d332d30332e737667">
 
