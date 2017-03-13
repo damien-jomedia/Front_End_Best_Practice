@@ -120,14 +120,21 @@ div#ad-placement ul > li > a { }
 
 <p>Keep method lengths short, if your method is 150+ lines of code this should be refactored and broken down into smaller methods.</p>
 
-<p>Team should be using a linter to ensure coding style conformity.</p>
-
 <p>Reference guide: <a href="https://github.com/ryanmcdermott/clean-code-javascript">Clean Code</a>.</p>
 
 --- Examples of ES6 code standards to follow ---
 
 -pure functions
 -immutable data
+
+<p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
+
+<p>Team should be using a linter to ensure coding style conformity.</p>
+
+<ul>
+  <li><a href="http://eslint.org/">Eslint</a> for es5, es6</li>
+  <li><a href="https://palantir.github.io/tslint/">Tslint</a> for developers using Typescript</li>
+</ul>
 
 <h3>Javascript client Architecture</h3>
 
@@ -142,13 +149,6 @@ div#ad-placement ul > li > a { }
 <ul>
 <li><a href="http://redux.js.org/docs/introduction/">Redux documentation</a></li>
 <li><a href="https://egghead.io/courses/getting-started-with-redux">Redux Tutorial</a></li>
-</ul>
-
-<p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
-
-<ul>
-  <li><a href="http://eslint.org/">Eslint</a> for es5, es6</li>
-  <li><a href="https://palantir.github.io/tslint/">Tslint</a> for developers using Typescript</li>
 </ul>
 
 <h3>Unit testing</h3>
