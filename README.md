@@ -22,7 +22,11 @@
 </ul>
 <h3>Cross browser/device developer Tools</h3>
 
-<p>All integrated designs must be tested across devices, browsers and screen sizes. Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p> 
+<p>All integrated designs must be tested across devices, browsers and screen sizes. At minimum the top 10 screen sizes from our user analytics should be covered</p>
+
+<h4>Testing options:</h4>
+
+<p>Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p> 
 
 <p><small>tool reference links:</small></p>
   <ul>
@@ -35,9 +39,14 @@
 
 <p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
-  <li>responsive interactions</li>
-  <li>loaders</li>
-  <li>messages</li>
+  <li>
+    responsive interactions:
+    <p>Show appropriate response to a user interaction, a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.</p>
+  </li>
+  <li>Forms: 
+  <p>User interaction with form feilds should be validated, provide error messages for inputs filled out with invalid info.</p>
+  <p>Form submits should trigger a loader or async processing message. Provide success and error responses to the user.</p>
+  </li>
 </ul>
   
 <h2>CSS Best Practices</h2>
