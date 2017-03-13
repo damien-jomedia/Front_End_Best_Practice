@@ -80,7 +80,7 @@ div#ad-placement ul > li > a { }
 
 <h3>Javascript code standards:</h3>
 
-<p>As a general rule, keep code as human readable as possible, don't write clever code. If your teamates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.</p>
+<p>As a general rule keep code as human readable as possible, don't write clever code. If your teamates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.</p>
 
 <pre>
   /*
@@ -93,7 +93,7 @@ div#ad-placement ul > li > a { }
                 .then(respons => resonse.json());
   };
   
-  const sendMessage = (message) => {
+  const sendMessage = message => {
       // http js magic to send our message
   };
   
@@ -107,7 +107,7 @@ div#ad-placement ul > li > a { }
 
 </pre>
 
-<p>Don't Repeat Yourself. If code is being duplicated multiple times then it needs to be refactored into a method.</p>
+<p>Don't Repeat Yourself. If code is being duplicated multiple times then it needs to be refactored into a new method.</p>
 
 <p>Team should be using a linter to ensure coding style conformity.</p>
 
