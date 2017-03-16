@@ -12,7 +12,7 @@
   <li><a href="http://zurb.com/word/mobile-first">Mobile First</a></li>
 </ul>
 
-<h3>Best Practice images</h3> -- expand section --
+<h3>Best Practice images</h3>
 <p>Best practice for loading images across devices and image optimization</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive image</a></li>
@@ -35,7 +35,7 @@
     <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html">XCode Simulator (OSX)</a> </li>
   </ul>
  
-<h2>General UI/UX Integration best practices </h2> -- expand this section --
+<h2>General UI/UX Integration best practices </h2> 
 
 <p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
@@ -85,7 +85,7 @@ div#ad-placement ul > li > a { }
   <li><a href="https://acss.io">Atomic CSS</a></li>
 </ul>
 
-<h2>Javascript</h2> -- needs editing --
+<h2>Javascript</h2> 
 
 <h3>Javascript code standards:</h3>
 
@@ -121,8 +121,6 @@ div#ad-placement ul > li > a { }
 <p>Keep method lengths short, if your method is 150+ lines of code this should be refactored and broken down into smaller methods.</p>
 
 <p>Reference guide: <a href="https://github.com/ryanmcdermott/clean-code-javascript">Clean Code</a>.</p>
-
---- Examples of ES6 code standards to follow ---
 
 <h3>Functional Javascript</h3>
 
@@ -163,7 +161,6 @@ div#ad-placement ul > li > a { }
 <p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz">What is a Pure Function?</a></p>
 
 <h4>Higher Order Functions</h4>
--- expand section ---
 <ul>
 <li>Map</li>
 <li>Reduce</li>
@@ -202,6 +199,7 @@ div#ad-placement ul > li > a { }
 <ul>
 <li><a href="https://mochajs.org/">Mocha js</a> a test framework running on Node.js and in the browser.</li>
 <li><a href="http://chaijs.com/">Chai js</a> a BDD / TDD assertion library for node.</li>
+<li><a href="https://gotwarlost.github.io/istanbul/">Instanbul js</a> code coverage tool.</li>
 </ul>
 
 <h3>Build/Bundler tools</h3>
@@ -228,7 +226,6 @@ div#ad-placement ul > li > a { }
 <ul>
 <li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">Angular 1.* style guide.</a></li>
 <li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide.</a></li>
-<li><a href="https://gotwarlost.github.io/istanbul/">Instanbul js</a> code coverage tool.</li>
 </ul>
 
 --- rough draft ---
