@@ -20,8 +20,7 @@
 - Very slow
 
 ## Visual Studio Code
-<!---![VS Code Screenshot](/uploads/screenshots/vscode-screenshot.png "VS Code Screenshot"){.align-right}--->
-<img src="/uploads/screenshots/vscode-screenshot.png" alt="" style="float:right; margin: 10px 10px 0 0; max-width: 30vw;" />
+<img src="/uploads/screenshots/vscode-screenshot.png" alt="" align="right" width="450" />
 
 ![VS Code Logo](/uploads/logos/vscode-logo.png "VS Code Logo")
 
