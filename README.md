@@ -1,4 +1,5 @@
 <img src="/uploads/logos/playster-logo.png" align="right" alt="Playster" />
+
 # Playster Wiki
 
 ## Life at Playster
