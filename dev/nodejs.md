@@ -1,12 +1,13 @@
-<!-- TITLE: Node.js -->
-<!-- SUBTITLE: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. -->
+<img src="/uploads/logos/nodejs.png" align="right" width="200" />
 
-![Nodejs](/uploads/logos/nodejs.png "Nodejs"){.pagelogo}
-# Overview
+# Node.js
+##### Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+## Overview
 - [Official Website](https://nodejs.org/en/)
-# Installation
+## Installation
 It's recommended to use NVM to manage your Node.js installations.
-## Ubuntu
+### Ubuntu
 
 ```sh
 # Download and install
@@ -24,7 +25,7 @@ nvm install --lts
 nvm use --lts
 ```
 
-## Windows
+### Windows
 
 Download the latest version from the Releases page (use the `nvm-setup.zip` file):
 https://github.com/coreybutler/nvm-windows/releases
@@ -38,6 +39,6 @@ nvm install --lts
 nvm use --lts
 ```
 
-# Documentation
+## Documentation
 The complete API documentation is available at:
 https://nodejs.org/dist/latest-v6.x/docs/api/
