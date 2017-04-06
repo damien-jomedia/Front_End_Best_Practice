@@ -1,8 +1,8 @@
-<!-- TITLE: Tools & IDEs -->
-<!-- SUBTITLE: Summary of useful tools and IDEs for code development -->
+# Tools & IDEs
+##### Summary of useful tools and IDEs for code development
 
-# IDEs
-## Atom
+## IDEs
+### Atom
 <img src="/uploads/screenshots/atom-screenshot.png" alt="" align="right" width="450" />
 
 ![Atom Logo](/uploads/logos/atom-logo.png "Atom Logo")
@@ -19,7 +19,7 @@
 **Cons**:
 - Very slow
 
-## Visual Studio Code
+### Visual Studio Code
 <img src="/uploads/screenshots/vscode-screenshot.png" alt="" align="right" width="450" />
 
 ![VS Code Logo](/uploads/logos/vscode-logo.png "VS Code Logo")
@@ -37,7 +37,7 @@
 **Cons**:
 - Cannot open multiple projects in the same window
 
-### Recommended Extensions
+#### Recommended Extensions
 
 - [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
@@ -52,31 +52,31 @@
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 - [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
-# Tools
-## Cmder
+## Tools
+### Cmder
 **Website**: http://cmder.net/  
 **Platform(s)**: Windows
 
 Cmder is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
 
-## HostsMan
+### HostsMan
 **Website**: http://www.abelhadigital.com/hostsman  
 **Platform(s)**: Windows
 
 HostsMan is an application that lets you manage your Hosts file with ease.
 
-## TeamViewer
+### TeamViewer
 **Website**: https://www.teamviewer.com/en/  
 **Platform(s)**: Windows, Mac & Linux
 
 TeamViewer is an app that allows you to remotely connect to multiple workstations. 
 
-## Xshell
+### Xshell
 **Website**: https://www.netsarang.com/products/xsh_overview.html  
 **Platform(s)**: Windows
 
 Xshell is a powerful terminal emulator that supports SSH, SFTP, TELNET, RLOGIN and SERIAL.
-# Fonts
+## Fonts
 These fonts are specifically designed for coding and terminal use:
 
 - [Inconsolata](http://levien.com/type/myfonts/inconsolata.html): Best for coding
