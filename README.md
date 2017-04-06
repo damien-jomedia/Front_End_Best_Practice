@@ -1,10 +1,10 @@
-<h1>Best Practice Front End Developement</h1> -- rough draft --
+<h1>Best Practice Front End Development</h1> -- rough draft --
 
 <h2>Responsive Web Design</h2>
 
 <h3>Mobile First</h3>
 
-<p>Colaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as posible.</p>
+<p>Collaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearrange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as possible.</p>
 
 <p><small>reference article:</small></p>
 
@@ -26,7 +26,7 @@
 
 <h4>Testing options:</h4>
 
-<p>Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p> 
+<p>Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p>
 
 <p><small>tool reference links:</small></p>
   <ul>
@@ -34,50 +34,50 @@
     <li><a href="https://www.browserstack.com/">Browserstack</a></li>
     <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html">XCode Simulator (OSX)</a> </li>
   </ul>
- 
-<h2>General UI/UX Integration best practices </h2> 
 
-<p>UI/UX is another process that requires colaboration with a designer, here are some general rules to follow during integration:<p>
+<h2>General UI/UX Integration best practices </h2>
+
+<p>UI/UX is another process that requires collaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
   <li>
     Responsive interactions:
     <p>Show appropriate response to a user interaction. For example: a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.</p>
   </li>
-  <li>Forms: 
-  <p>User interaction with form feilds should be validated, provide error messages for inputs filled out with invalid info.</p>
+  <li>Forms:
+  <p>User interaction with form fields should be validated, provide error messages for inputs filled out with invalid info.</p>
   <p>Form submits should trigger a loader or async processing message. Provide success and error responses to the user.</p>
   </li>
 </ul>
-  
+
 <h2>CSS Best Practices</h2>
 
 <h3>CSS selectors general guidelines:</h3>
 
-<p>Prefer classes over id's, classes have a lower specificity and can be overriden, id's can only be overriden by !important tags or inline styles. </p>
+<p>Prefer classes over id's, classes have a lower specificity and can be overridden, id's can only be overridden by !important tags or inline styles. </p>
 
 <pre>
 /* BAD */
-div#ad-placement { } 
+div#ad-placement { }
 
 /* GOOD */
-.ad-placement { } 
+.ad-placement { }
 </pre>
 
 <p>Favor low specificity in selectors, try not to nest selectors more than 3 deep, create a new class if needed</p>
 
 <pre>
 /* BAD */
-div#ad-placement ul > li > a { } 
+div#ad-placement ul > li > a { }
 
 /* GOOD */
 .ad-placement--link { }
 </pre>
 
-<p>Never use !important to overide a style, if !important is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to overide all other styles. For example, when adding validation styles to form feilds.</p>
+<p>Never use !important to override a style, if !important is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to override all other styles. For example, when adding validation styles to form fields.</p>
 
 <h3>CSS style guide</h3>
-<p>Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be aggreed upon. </p>
-  
+<p>Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be agreed upon. </p>
+
 <p><small>style guide reference links:</small></p>
 <ul>
   <li><a href="http://getbem.com/">BEM</a></li>
@@ -85,32 +85,32 @@ div#ad-placement ul > li > a { }
   <li><a href="https://acss.io">Atomic CSS</a></li>
 </ul>
 
-<h2>Javascript</h2> 
+<h2>Javascript</h2>
 
 <h3>Javascript code standards:</h3>
 
-<p>As a general rule keep code as human readable as possible, don't write clever code. If your teamates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.</p>
+<p>As a general rule keep code as human readable as possible, don't write clever code. If your teammates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.</p>
 
 <pre>
   /*
   *  Methods should be lower camel cased.
   *  Method names are typically verbs or verb phrases.
   */
-  
-  const getUserList = () => { 
+
+  const getUserList = () => {
       return fetch('http://somedomain.com/api/users/list')
-                .then(respons => resonse.json());
+                .then(response => response.json());
   };
-  
+
   const sendMessage = message => {
       // http js magic to send our message
   };
-  
+
   /*
   *  Variable names should be lower camel cased.
   *  Variable names are typically nouns or noun phrases.
   */
-  
+
   let users = getUserList();
   let playlistId = "some playlist id";
 
@@ -134,28 +134,28 @@ div#ad-placement ul > li > a { }
   /*
   * Pure Function, passing the same arguments should return the same output
   */
-  
+
   const addNumbers = (x, y) => x + y;
-  
-  addNumbers(1, 2); // 3 
-  addNumbers(1, 2); // 3 
+
+  addNumbers(1, 2); // 3
+  addNumbers(1, 2); // 3
   addNumbers(5, 6); // 11
   addNumbers(5, 6); // 11
-  
+
   /*
   * Impure function, modifies state external to function, or relies on state external to function
   */
-  
+
   let myNumber = 8;
-  
+
   const addNumbersImpure = (x) =>  x + myNumber;
 
   addNumbersImpure(5); // 13 initial result
-  
-  myNumerber = 12; // external state changed
-  
+
+  myNumber = 12; // external state changed
+
   addNumbersImpure(5); // 17, result has changed, results are inconsistent and can't be predicted
-  
+
 </pre>
 
 <p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz">What is a Pure Function?</a></p>
@@ -168,7 +168,7 @@ div#ad-placement ul > li > a { }
 </ul>
 <p><a href="https://www.youtube.com/watch?v=BMUiFMZr7vk">Higher order functions tutorial</a></p>
 
-<p>Team should be following a styleguide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
+<p>Team should be following a style guide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
 
 <p>Team should be using a linter to ensure coding style conformity.</p>
 
@@ -183,7 +183,7 @@ div#ad-placement ul > li > a { }
 
 <h4>Redux Pattern:</h4>
 <img src="http://blog.ng-book.com/wp-content/uploads/2016/07/redux-diagram.png">
-<p>One store for the state, Action is dispatched from component triggering a change to the state, all components subrscribed to the state are updated with the new state.</p>
+<p>One store for the state, Action is dispatched from component triggering a change to the state, all components subscribed to the state are updated with the new state.</p>
 
 <img src="https://camo.githubusercontent.com/1281ff81bc002657d6689c6d667cd9e3e92401fa/68747470733a2f2f63646e2e6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f72656475782d61727469636c652d332d30332e737667">
 
@@ -220,7 +220,7 @@ div#ad-placement ul > li > a { }
 <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
 <li><a href="https://babeljs.io/">Babel</a></li>
 </ul>
- 
+
 <h3>Angular Style Guide</h3>
 
 <ul>
