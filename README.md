@@ -37,7 +37,7 @@
 - [GitHub](/dev/github.md): How to use git efficiently as a team, commands, etc.
 - [Deployments](dev/deployments.md): Deployment processes, Travis configuration & tips.
 - [Services](/dev/services.md): Services available to developers.
-- [Tools & IDEs](dev/tools-ides/.md): List of recommended tools/IDEs and their must-have extensions.
+- [Tools & IDEs](dev/tools-ides.md): List of recommended tools/IDEs and their must-have extensions.
 
 ### Languages / Platforms
 - [Node.js](/dev/nodejs.md)
