@@ -1,9 +1,5 @@
 <img src="/uploads/logos/playster-logo.png" align="right" alt="Playster" />
 
-# Playster Wiki
-
-## Life at Playster
-- [Services](/services)
 ## Projects
 - [Android App](/project/android): Android app for consuming Playster medias
 - [CAPI](/project/capi): Content API
@@ -21,6 +17,7 @@
 - [Introduction](/agile/introduction)
 - [Scrum](/agile/scrum)
 - [Kanban](/agile/kanban)
+
 ## Design
 - [Figma](/design/figma): Interface design tool in the browser
 - [Material Design](/design/material-design): A design language developed by Google, used at Playster.
@@ -31,11 +28,13 @@
 
 ### iOS
 -
+
 ## Programming
 ### Guides
 - [Javascript / Node.js](/dev/js): Code style, syntax, tools, best practices, etc.
 - [GitHub](/dev/github): How to use git efficiently as a team, commands, etc.
 - [Deployments](dev/deployments): Deployment processes, Travis configuration & tips.
+- [Services](/dev/services): Services available to developers.
 - [Tools & IDEs](dev/tools-ides/): List of recommended tools/IDEs and their must-have extensions.
 
 ### Languages / Platforms
