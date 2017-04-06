@@ -1,5 +1,7 @@
 <img src="/uploads/logos/playster-logo.png" align="right" alt="Playster" />
 
+# Playster Wiki
+
 ## Projects
 - [Android App](/project/android): Android app for consuming Playster medias
 - [CAPI](/project/capi): Content API
