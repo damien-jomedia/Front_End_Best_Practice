@@ -3,7 +3,7 @@
 
 # IDEs
 ## Atom
-<img src="/uploads/screenshots/atom-screenshot.png" alt="" style="float:right; margin: 10px 10px 0 0; max-width: 30vw;" />
+<img src="/uploads/screenshots/atom-screenshot.png" alt="" style="float:right; margin: 10px 10px 0 0; max-width: 30%;" />
 
 ![Atom Logo](/uploads/logos/atom-logo.png "Atom Logo")
 
