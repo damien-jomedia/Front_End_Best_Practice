@@ -1,12 +1,9 @@
-<!-- TITLE: Playster -->
-<!-- SUBTITLE: Welcome to Playster -->
-![Playster](/uploads/logos/playster-logo.png "Playster"){.pagelogo}
-# Life at Playster
-- [The Company](/company)
-- [The Teams](/team)
+<img src="/uploads/logos/playster-logo.png" align="right" alt="Playster" />
+# Playster Wiki
+
+## Life at Playster
 - [Services](/services)
-- [Calendars](/calendars)
-# Projects
+## Projects
 - [Android App](/project/android): Android app for consuming Playster medias
 - [CAPI](/project/capi): Content API
 - [Core](/project/core): Shared libraries, helpers, middlewares, services, etc.
@@ -19,32 +16,32 @@
 - [Generator / Middleman](/project/signup): Landing pages and signup flow
 - [TAPI](/project/tapi): Tracking API
 
-# Agile
+## Agile
 - [Introduction](/agile/introduction)
 - [Scrum](/agile/scrum)
 - [Kanban](/agile/kanban)
-# Design
+## Design
 - [Figma](/design/figma): Interface design tool in the browser
 - [Material Design](/design/material-design): A design language developed by Google, used at Playster.
 
-# Mobile
-## Android
+## Mobile
+### Android
 -
 
-## iOS
+### iOS
 -
-# Programming
-## Guides
+## Programming
+### Guides
 - [Javascript / Node.js](/dev/js): Code style, syntax, tools, best practices, etc.
 - [GitHub](/dev/github): How to use git efficiently as a team, commands, etc.
 - [Deployments](dev/deployments): Deployment processes, Travis configuration & tips.
 - [Tools & IDEs](dev/tools-ides/): List of recommended tools/IDEs and their must-have extensions.
 
-## Languages / Platforms
+### Languages / Platforms
 - [Node.js](/dev/nodejs)
 - [PHP](/dev/php)
 
-# Quality Assurance
+## Quality Assurance
 -
-# Tracking / SEO
+## Tracking / SEO
 -
