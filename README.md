@@ -3,25 +3,25 @@
 # Playster Wiki
 
 ## Projects
-- [Android App](/project/android.md): Android app for consuming Playster medias
-- [CAPI](/project/capi.md): Content API
+- *[Android App](/project/android.md)*: Android app for consuming Playster medias
+- *[CAPI](/project/capi.md)*: Content API
 - [Core](/project/core.md): Shared libraries, helpers, middlewares, services, etc.
-- [God Mode](/project/god-mode)
-- [Green CMS](/project/green-cms)
-- [Red CMS](/project/red-cms)
-- [iOS App](/project/ios.md): Apple iOS app for consuming Playster medias
-- [Member Area](/project/member-area.md): Web-based portal for consuming Playster medias
-- [MAPI](/project/mapi.md): Member API
+- *[God Mode](/project/god-mode)*
+- *[Green CMS](/project/green-cms)*
+- *[Red CMS](/project/red-cms)*
+- *[iOS App](/project/ios.md)*: Apple iOS app for consuming Playster medias
+- *[Member Area](/project/member-area.md)*: Web-based portal for consuming Playster medias
+- *[MAPI](/project/mapi.md)*: Member API
 - [Generator / Middleman](/project/signup.md): Landing pages and signup flow
-- [TAPI](/project/tapi.md): Tracking API
+- *[TAPI](/project/tapi.md)*: Tracking API
 
 ## Agile
 - [Introduction](/agile/introduction.md)
-- [Scrum](/agile/scrum.md)
-- [Kanban](/agile/kanban.md)
+- *[Scrum](/agile/scrum.md)*
+- *[Kanban](/agile/kanban.md)*
 
 ## Design
-- [Figma](/design/figma.md): Interface design tool in the browser
+- *[Figma](/design/figma.md)*: Interface design tool in the browser
 - [Material Design](/design/material-design.md): A design language developed by Google, used at Playster.
 
 ## Mobile
@@ -41,7 +41,7 @@
 
 ### Languages / Platforms
 - [Node.js](/dev/nodejs.md)
-- [PHP](/dev/php.md)
+- *[PHP](/dev/php.md)*
 
 ## Quality Assurance
 -
