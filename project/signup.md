@@ -8,10 +8,10 @@ It does very little server processing apart from that. The only thing it might d
 ## Tech / Standards Used
 - **Platform:** Node.js LTS
 - **Language:** ES6
-- **Code Style:** [StandardJS](/dev/js.md#standard-js)
-- **Build/Dev Framework:** [FuseBox](/dev/js.md#fuse-box)
+- **Code Style:** [StandardJS](/dev/js.md#standardjs)
+- **Build/Dev Framework:** [FuseBox](/dev/js.md#fusebox)
 - **Testing Framework:** [JEST](/dev/js.md#jest)
-- **Documentation:** [jsDoc](/dev/js.md#js-doc)
+- **Documentation:** [jsDoc](/dev/js.md#jsdoc)
 
 # Middleman
 Middleman is like the name says, the middle service between the APIs & Generator or the client. It will also do a bunch of regular checks and validations on the requests. The most used request to middleman is probably the sonar request.
@@ -25,7 +25,7 @@ Middleman is like the name says, the middle service between the APIs & Generator
 ## Tech / Standards Used
 - **Platform:** Node.js LTS
 - **Language:** ES6
-- **Code Style:** [StandardJS](/dev/js.md#standard-js)
-- **Build/Dev Framework:** [FuseBox](/dev/js.md#fuse-box)
+- **Code Style:** [StandardJS](/dev/js.md#standardjs)
+- **Build/Dev Framework:** [FuseBox](/dev/js.md#fusebox)
 - **Testing Framework:** [JEST](/dev/js.md#jest)
-- **Documentation:** [jsDoc](/dev/js.md#js-doc)
+- **Documentation:** [jsDoc](/dev/js.md#jsdoc)
