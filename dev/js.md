@@ -4,9 +4,12 @@
 ##### Best practices and rules for the javascript language
 
 Standards and rules to follow are defined per team / project.
+
+<img src="/uploads/logos/standardjs-logo.png" align="right" />
+
 ## Code Style
 ### StandardJS
-![Standardjs Logo](/uploads/logos/standardjs-logo.png "Standardjs Logo"){.align-right}
+
 Standard JS code style should be followed for all javascript and node.js projects:  
 https://standardjs.com/
 
@@ -47,16 +50,19 @@ standard file.js
 
 **ES6/ES2015** syntax is recommended. However, note that you cannot use `imports` natively in NodeJS. Code that is transpiled using Babel or other tools is not affected.
 
+<img src="/uploads/logos/semi-standardjs-logo.png" align="right" />
+
 ### Semi-StandardJS
-![Semi Standardjs Logo](/uploads/logos/semi-standardjs-logo.png "Semi Standardjs Logo"){.align-right}
 
 Identical to the StandardJS style guide (see above) with the exception of semicolons. Semicolons are expected at the end of all statements.
 
 ### Typescript
 *todo*
 ## Build / Watch
+
+<img src="/uploads/logos/fusebox-logo.png" align="right" />
+
 ### FuseBox
-![Fusebox Logo](/uploads/logos/fusebox-logo.png "Fusebox Logo"){.align-right}
 [**FuseBox**](http://fuse-box.org/) is a bundler/module loader that combines the power of webpack, JSPM and SystemJS.
 
 ```sh
@@ -82,14 +88,17 @@ It's a good idea to add npm shortcuts pointing to your fusebox setup, e.g.:
 }
 ```
 
+<img src="/uploads/logos/gulp-logo.png" align="right" />
+
 ### Gulp
-![Gulp Logo](/uploads/logos/gulp-logo.png "Gulp Logo"){.align-right}
 *todo*
+
 ## Tests
 All projects should have tests (when applicable).
 
+<img src="/uploads/logos/jest-logo.png" align="right" />
+
 ### JEST
-![Jest Logo](/uploads/logos/jest-logo.png "Jest Logo"){.align-right}
 The [**JEST**](https://facebook.github.io/jest/) framework is ideal because of its ease of use and integrated features.
 
 ```sh
@@ -171,8 +180,9 @@ The matcher should return an object like:
 }
 ```
 
+<img src="/uploads/logos/chaijs-mocha-logo.png" align="right" />
+
 ### Mocha + Chai
-![Chaijs Mocha Logo](/uploads/logos/chaijs-mocha-logo.png "Chaijs Mocha Logo"){.align-right}
 **Mocha** with **Chai** is a mature testing solution.
 
 - Mocha: http://mochajs.org/
