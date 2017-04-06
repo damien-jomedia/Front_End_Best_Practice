@@ -3,26 +3,26 @@
 # Playster Wiki
 
 ## Projects
-- [Android App](/project/android): Android app for consuming Playster medias
-- [CAPI](/project/capi): Content API
-- [Core](/project/core): Shared libraries, helpers, middlewares, services, etc.
+- [Android App](/project/android.md): Android app for consuming Playster medias
+- [CAPI](/project/capi.md): Content API
+- [Core](/project/core.md): Shared libraries, helpers, middlewares, services, etc.
 - [God Mode](/project/god-mode)
 - [Green CMS](/project/green-cms)
 - [Red CMS](/project/red-cms)
-- [iOS App](/project/ios): Apple iOS app for consuming Playster medias
-- [Member Area](/project/member-area): Web-based portal for consuming Playster medias
-- [MAPI](/project/mapi): Member API
-- [Generator / Middleman](/project/signup): Landing pages and signup flow
-- [TAPI](/project/tapi): Tracking API
+- [iOS App](/project/ios.md): Apple iOS app for consuming Playster medias
+- [Member Area](/project/member-area.md): Web-based portal for consuming Playster medias
+- [MAPI](/project/mapi.md): Member API
+- [Generator / Middleman](/project/signup.md): Landing pages and signup flow
+- [TAPI](/project/tapi.md): Tracking API
 
 ## Agile
-- [Introduction](/agile/introduction)
-- [Scrum](/agile/scrum)
-- [Kanban](/agile/kanban)
+- [Introduction](/agile/introduction.md)
+- [Scrum](/agile/scrum.md)
+- [Kanban](/agile/kanban.md)
 
 ## Design
-- [Figma](/design/figma): Interface design tool in the browser
-- [Material Design](/design/material-design): A design language developed by Google, used at Playster.
+- [Figma](/design/figma.md): Interface design tool in the browser
+- [Material Design](/design/material-design.md): A design language developed by Google, used at Playster.
 
 ## Mobile
 ### Android
@@ -33,15 +33,15 @@
 
 ## Programming
 ### Guides
-- [Javascript / Node.js](/dev/js): Code style, syntax, tools, best practices, etc.
-- [GitHub](/dev/github): How to use git efficiently as a team, commands, etc.
-- [Deployments](dev/deployments): Deployment processes, Travis configuration & tips.
-- [Services](/dev/services): Services available to developers.
-- [Tools & IDEs](dev/tools-ides/): List of recommended tools/IDEs and their must-have extensions.
+- [Javascript / Node.js](/dev/js.md): Code style, syntax, tools, best practices, etc.
+- [GitHub](/dev/github.md): How to use git efficiently as a team, commands, etc.
+- [Deployments](dev/deployments.md): Deployment processes, Travis configuration & tips.
+- [Services](/dev/services.md): Services available to developers.
+- [Tools & IDEs](dev/tools-ides/.md): List of recommended tools/IDEs and their must-have extensions.
 
 ### Languages / Platforms
-- [Node.js](/dev/nodejs)
-- [PHP](/dev/php)
+- [Node.js](/dev/nodejs.md)
+- [PHP](/dev/php.md)
 
 ## Quality Assurance
 -
