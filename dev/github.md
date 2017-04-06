@@ -9,7 +9,7 @@ GitHub is a cloud-based Git version control repository service.
 
 <img src="/uploads/logos/github-flow-icon.png" align="right" />
 
-# Development Process
+## Development Process
 
 Using the right flow when developing new features or fixing bugs is critical to keep merging and deployment issues at a minimum.
 
@@ -21,25 +21,25 @@ Developers should never work directly on the project repository. A fork of the m
 
 In most cases, developers should create a copy of the dev's master/develop branch for every feature or hotfix they are working on. This method allows developers to work on multiple features/fixes without affecting one or another. It's also easier to rollback in case of an issue discovered later in the flow.
 
-### Without dev branch
+#### Without dev branch
 ![Github Fork Pr Flow Simple](/uploads/diagrams/github-fork-pr-flow-simple.png "Github Fork Pr Flow Simple")
 
-### With dev branch
+#### With dev branch
 ![Github Fork Pr Flow](/uploads/diagrams/github-fork-pr-flow.png "Github Fork Pr Flow")
-# How-to
-## Fork a branch
+## How-to
+### Fork a branch
 From the project repository, click on the **Fork** button to make a copy to your personnal account:
 
 ![Github Fork](/uploads/screenshots/github-fork.png "Github Fork")
 
-## Create a Repository
+### Create a Repository
 From scratch -- Create a new local repository named **my_project**  
 `$ git init my_project`
 
 Download from an existing repository located at **my_url**  
 `$ git clone my_url`
 
-## Observe your Repository
+### Observe your Repository
 List new or modified files not yet committed  
 `$ git status`
 
@@ -67,7 +67,7 @@ Show full change history
 Show change history for file/directory including diffs  
 `$ git log -p [file/directory]`
 
-## Working with Branches
+### Working with Branches
 List all local branches  
 `$ git branch`
 
@@ -90,7 +90,7 @@ Merge **branch_a** into **branch_b**
 Tag the current commit **my_tag**  
 `$ git tag my_tag`
 
-## Making a Change
+### Making a Change
 Stages the file, ready for commit  
 `$ git add [file]`
 
@@ -109,7 +109,7 @@ Unstages file, keeping the file changes
 Revert everything to the last commit  
 `$ git reset --hard`
 
-## Synchronize
+### Synchronize
 Get the latest changes from origin (no merge)  
 `$ git fetch`
 
