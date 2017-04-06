@@ -218,4 +218,4 @@ In the above example:
 
 For more information on how to use JSDoc and all the available tags you can use, visit the [JSDoc website](http://usejsdoc.org/).
 ## IDEs
-For a list of recommended IDEs and their must-have extensions, read the [Tools & IDEs](/dev/tools-ides/) page.
+For a list of recommended IDEs and their must-have extensions, read the [Tools & IDEs](/dev/tools-ides.md) page.
