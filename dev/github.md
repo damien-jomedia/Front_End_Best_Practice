@@ -1,12 +1,16 @@
-<!-- TITLE: GitHub -->
-<!-- SUBTITLE: How to use git efficiently as a team -->
-![Github Logo](/uploads/logos/github-logo.png "Github Logo"){.pagelogo}
+<img src="/uploads/logos/github-logo.png" align="right" />
+
 # GitHub
+##### How to use git efficiently as a team
+
 GitHub is a cloud-based Git version control repository service.
 
 ![Github Icon](/uploads/icons/github-icon.png "Github Icon") [GitHub Repository](https://github.com/JoMedia)
+
+<img src="/uploads/logos/github-flow-icon.png" align="right" />
+
 # Development Process
-![Github Flow Icon](/uploads/logos/github-flow-icon.png "Github Flow Icon"){.align-right}
+
 Using the right flow when developing new features or fixing bugs is critical to keep merging and deployment issues at a minimum.
 
 A standard process is to create a main branch (master) and optionally a dev branch (develop):
