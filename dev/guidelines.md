@@ -1,43 +1,39 @@
-<h1>Best Practice Front End Development</h1> -- rough draft --
+# General Guidelines
 
-<h2>Responsive Web Design</h2>
+## Responsive Web Design
 
-<h3>Mobile First</h3>
+### Mobile First
 
-<p>Collaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearrange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as possible.</p>
+Collaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearrange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as possible.
 
-<p><small>reference article:</small></p>
+> Reference article: [Mobile First](http://zurb.com/word/mobile-first)
 
-<ul>
-  <li><a href="http://zurb.com/word/mobile-first">Mobile First</a></li>
-</ul>
+### Images
 
-<h3>Best Practice images</h3>
-<p>Best practice for loading images across devices and image optimization</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive image</a></li>
-<li>All images should be saved to a CDN</li>
-<li>GZIP/compress images</li>
-<li>Optimize images</li>
-</ul>
-<h3>Cross browser/device developer Tools</h3>
+Best practice for loading images across devices and image optimization
 
-<p>All integrated designs must be tested across devices, browsers and screen sizes. At minimum the top 10 screen sizes from our user analytics should be covered.</p>
+- [Responsive image](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- All images should be saved to a CDN
+- GZIP/compress images
+- Optimize images
 
-<h4>Testing options:</h4>
+### Cross browser/device developer Tools
 
-<p>Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.</p>
+All integrated designs must be tested across devices, browsers and screen sizes. At minimum the top 10 screen sizes from our user analytics should be covered.
 
-<p><small>tool reference links:</small></p>
-  <ul>
-    <li><a href="https://developer.chrome.com/devtools">Chrome Dev Tools</a></li>
-    <li><a href="https://www.browserstack.com/">Browserstack</a></li>
-    <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html">XCode Simulator (OSX)</a> </li>
-  </ul>
+#### Testing options:
 
-<h2>General UI/UX Integration best practices </h2>
+Chrome dev tools has a basic emulator for screen size testing, however this tool does not act like a native browser, you are still testing in Chrome on your desktop OS, so this not a completely accurate method for testing mobile screen sizes. Your best option is to test on the actual targeted device or use a tool like BrowserStack, which has virtual machines running varying operating systems and browsers. For developers using Mac OSX there is a tool called Simulator bundled with Xcode that will emulate mobile iOS, this can also be used for quick testing of mobile features.
 
-<p>UI/UX is another process that requires collaboration with a designer, here are some general rules to follow during integration:<p>
+> Reference links:
+>
+> [Chrome Dev Tools](https://developer.chrome.com/devtools)
+> [Browserstack](https://www.browserstack.com/)
+> [XCode Simulator (OSX)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html)
+
+## General UI/UX Integration
+
+UI/UX is another process that requires collaboration with a designer, here are some general rules to follow during integration:<p>
 <ul>
   <li>
     Responsive interactions:
