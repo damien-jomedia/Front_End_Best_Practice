@@ -55,6 +55,8 @@
 
 <p>Prefer classes over id's, classes have a lower specificity and can be overridden, id's can only be overridden by !important tags or inline styles. </p>
 
+<p>Prefer classes over tag names, because your markup might change for seo reasons or content reasons and you don't want your page style to be affected.</p>
+
 <pre>
 /* BAD */
 div#ad-placement { }
