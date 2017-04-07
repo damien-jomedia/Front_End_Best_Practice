@@ -6,7 +6,7 @@
 
 Collaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearrange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as possible.
 
-> Reference article:
+> Reference links:
 > 
 > - [Mobile First](http://zurb.com/word/mobile-first)
 
@@ -65,7 +65,7 @@ Favor low specificity in selectors, try not to nest selectors more than 3 deep, 
 div#ad-placement ul > li > a { }
 
 /* GOOD */
-.ad-placement--link { }
+.ad-placement-link { }
 ```
 
 Never use `!important` to override a style, if `!important` is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to override all other styles. For example, when adding validation styles to form fields.</p>
@@ -82,11 +82,11 @@ Team should follow a css style guide. All css should read as if it was coded by 
 
 ## Javascript
 
-<h3>Javascript code standards:</h3>
+### Code Standards
 
-<p>As a general rule keep code as human readable as possible, don't write clever code. If your teammates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.</p>
+As a general rule keep code as human readable as possible, don't write clever code. If your teammates can't read or understand the code you've written then they won't be able to modify or extend features that you have built. This will cost your team time, as this feature will have to be refactored. Methods and variable names should be clear and code should be well documented with comments.
 
-<pre>
+```js
   /*
   *  Methods should be lower camel cased.
   *  Method names are typically verbs or verb phrases.
@@ -109,23 +109,25 @@ Team should follow a css style guide. All css should read as if it was coded by 
   let users = getUserList();
   let playlistId = "some playlist id";
 
-</pre>
+```
 
-<p>Don't Repeat Yourself. If code is being duplicated multiple times then it needs to be refactored into a new method.</p>
+Don't Repeat Yourself. If code is being duplicated multiple times then it needs to be refactored into a new method.
 
-<p>Keep method lengths short, if your method is 150+ lines of code this should be refactored and broken down into smaller methods.</p>
+Keep method lengths short, if your method is 150+ lines of code this should be refactored and broken down into smaller methods.
 
-<p>Reference guide: <a href="https://github.com/ryanmcdermott/clean-code-javascript">Clean Code</a>.</p>
+> Reference links:
+> 
+> - [Clean Code](https://github.com/ryanmcdermott/clean-code-javascript)
 
-<h3>Functional Javascript</h3>
+### Functional Javascript
 
-<p>Favor a functional programming approach when coding in Javascript:</p>
+Favor a functional programming approach when coding in Javascript:
 
-<h4>Pure Functions</h4>
+#### Pure Functions
 
-<p>A pure function is a function where the return value is only determined by its input values, without observable side effects.</p>
+A pure function is a function where the return value is only determined by its input values, without observable side effects.
 
-<pre>
+```js
   /*
   * Pure Function, passing the same arguments should return the same output
   */
@@ -151,76 +153,76 @@ Team should follow a css style guide. All css should read as if it was coded by 
 
   addNumbersImpure(5); // 17, result has changed, results are inconsistent and can't be predicted
 
-</pre>
+```
 
-<p>Reference article: <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz">What is a Pure Function?</a></p>
+> Reference links:
+>
+> - [What is a Pure Function?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.wfvbppegz)
 
-<h4>Higher Order Functions</h4>
-<ul>
-<li>Map</li>
-<li>Reduce</li>
-<li>Filter</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=BMUiFMZr7vk">Higher order functions tutorial</a></p>
+#### Higher Order Functions
 
-<p>Team should be following a style guide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards</p>
+- Map
+- Reduce
+- Filter
 
-<p>Team should be using a linter to ensure coding style conformity.</p>
+> Reference links:
+> 
+> - [Higher order functions tutorial](https://www.youtube.com/watch?v=BMUiFMZr7vk)
 
-<ul>
-  <li><a href="http://eslint.org/">Eslint</a> for es5, es6</li>
-  <li><a href="https://palantir.github.io/tslint/">Tslint</a> for developers using Typescript</li>
-</ul>
+Team should be following a style guide, and the style guide should be respected. Pull requests will be rejected if code doesn't conform to the style guide or meet code standards.
 
-<h3>Javascript client Architecture</h3>
+Team should be using a linter to ensure coding style conformity.
 
-<p>With Angular 1 we are using a MV* architecture (Angular MVWhatever), this worked well when the app was small, but did not scale well. For Angular 2 we are switching to the Redux pattern. </p>
+> Reference links:
+> 
+> - [ESLint for ES5 and above](http://eslint.org/)
+> - [TSLint for Typescript](https://palantir.github.io/tslint/)
 
-<h4>Redux Pattern:</h4>
-<img src="http://blog.ng-book.com/wp-content/uploads/2016/07/redux-diagram.png">
-<p>One store for the state, Action is dispatched from component triggering a change to the state, all components subscribed to the state are updated with the new state.</p>
+### Javascript Client Architecture
 
-<img src="https://camo.githubusercontent.com/1281ff81bc002657d6689c6d667cd9e3e92401fa/68747470733a2f2f63646e2e6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f72656475782d61727469636c652d332d30332e737667">
+With Angular 1 we are using a MV* architecture (Angular MVWhatever), this worked well when the app was small, but did not scale well. For Angular 2 we are switching to the Redux pattern.
 
-<ul>
-<li><a href="http://redux.js.org/docs/introduction/">Redux documentation</a></li>
-<li><a href="https://egghead.io/courses/getting-started-with-redux">Redux Tutorial</a></li>
-</ul>
+#### Redux Pattern
 
-<h3>Unit testing</h3>
+![](http://blog.ng-book.com/wp-content/uploads/2016/07/redux-diagram.png)
 
-<p>All new code should be covered by a unit test. Pull requests will be rejected if unit tests are missing or fail.</p>
+One store for the state, Action is dispatched from component triggering a change to the state, all components subscribed to the state are updated with the new state.
 
-<ul>
-<li><a href="https://mochajs.org/">Mocha js</a> a test framework running on Node.js and in the browser.</li>
-<li><a href="http://chaijs.com/">Chai js</a> a BDD / TDD assertion library for node.</li>
-<li><a href="https://gotwarlost.github.io/istanbul/">Instanbul js</a> code coverage tool.</li>
-</ul>
+![](https://camo.githubusercontent.com/1281ff81bc002657d6689c6d667cd9e3e92401fa/68747470733a2f2f63646e2e6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30332f72656475782d61727469636c652d332d30332e737667)
 
-<h3>Build/Bundler tools</h3>
-<p>Automate processes, testing, building.</p>
-<ul>
-  <li><a href="https://www.npmjs.com/package/fuse-box">FuseBox</a></li>
-  <li><a href="https://webpack.github.io/">Webpack</a></li>
-  <li><a href="http://gulpjs.com/">Gulp</a></li>
-</ul>
+> Reference links:
+> 
+> - [Redux Documentation](http://redux.js.org/docs/introduction/)
+> - [Redux Tutorial](https://egghead.io/courses/getting-started-with-redux)
 
-<h3>Frameworks/Libraries</h3>
-<p>current technology stack used in Playster MA</p>
-<ul>
-<li><a href="https://angular.io/">Angular 2</a></li>
-<li><a href="https://angularjs.org/">Angular 1.6</a></li>
-<li><a href="https://nodejs.org/en/">Node</a></li>
-<li><a href="https://www.npmjs.com/">Npm</a></li>
-<li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-<li><a href="https://babeljs.io/">Babel</a></li>
-</ul>
+### Unit Testing
 
-<h3>Angular Style Guide</h3>
+All new code should be covered by a unit test. Pull requests will be rejected if unit tests are missing or fail.
 
-<ul>
-<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">Angular 1.* style guide.</a></li>
-<li><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">Angular 2 style guide.</a></li>
-</ul>
+- [Mocha js](https://mochajs.org/) a test framework running on Node.js and in the browser.
+- [Chai js](http://chaijs.com/) a BDD / TDD assertion library for node.
+- [Instanbul js](https://gotwarlost.github.io/istanbul/) code coverage tool.
 
---- rough draft ---
+### Build/Bundler Tools
+
+Automate processes, testing, building.
+
+- [FuseBox](https://www.npmjs.com/package/fuse-box)
+- [Webpack](https://webpack.github.io/)
+- [Gulp](http://gulpjs.com/)
+
+### Frameworks/Libraries
+
+Current technology stack used in Playster MA:
+
+- [Angular 2](https://angular.io/)
+- [Angular 1.6](https://angularjs.org/)
+- [Node](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Babel](https://babeljs.io/)
+
+### Angular Style Guide
+
+- [Angular 1.* style guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+- [Angular 2 style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
