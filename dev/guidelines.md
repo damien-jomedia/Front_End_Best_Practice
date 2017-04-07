@@ -6,7 +6,9 @@
 
 Collaborate with designers, take a mobile first approach to building pages. Start with smallest screen size as a baseline, scale until content breaks, rearrange/enhance content for this screen size and repeat these steps. Ideally there should be at least 3 target designs to match from the design team, a smallest size mobile, mid size tablet and full screen desktop. Front end developer should communicate with designer or design team during integration, have designers review coded designs as frequently as possible.
 
-> Reference article: [Mobile First](http://zurb.com/word/mobile-first)
+> Reference article:
+> 
+> - [Mobile First](http://zurb.com/word/mobile-first)
 
 ### Images
 
@@ -27,61 +29,58 @@ Chrome dev tools has a basic emulator for screen size testing, however this tool
 
 > Reference links:
 >
-> [Chrome Dev Tools](https://developer.chrome.com/devtools)
-> [Browserstack](https://www.browserstack.com/)
-> [XCode Simulator (OSX)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html)
+> - [Chrome Dev Tools](https://developer.chrome.com/devtools)
+> - [Browserstack](https://www.browserstack.com/)
+> - [XCode Simulator (OSX)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html)
 
 ## General UI/UX Integration
 
-UI/UX is another process that requires collaboration with a designer, here are some general rules to follow during integration:<p>
-<ul>
-  <li>
-    Responsive interactions:
-    <p>Show appropriate response to a user interaction. For example: a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.</p>
-  </li>
-  <li>Forms:
-  <p>User interaction with form fields should be validated, provide error messages for inputs filled out with invalid info.</p>
-  <p>Form submits should trigger a loader or async processing message. Provide success and error responses to the user.</p>
-  </li>
-</ul>
+UI/UX is another process that requires collaboration with a designer, here are some general rules to follow during integration:
 
-<h2>CSS Best Practices</h2>
+### Responsive interactions:
 
-<h3>CSS selectors general guidelines:</h3>
+Show appropriate response to a user interaction. For example: a button click, if it triggers an async process should show a loader, or processing message to the user. If the process fails show appropriate error message. Don't leave the user hanging.
 
-<p>Prefer classes over id's, classes have a lower specificity and can be overridden, id's can only be overridden by !important tags or inline styles. </p>
+### Forms:
+User interaction with form fields should be validated, provide error messages for inputs filled out with invalid info. Form submits should trigger a loader or async processing message. Provide success and error responses to the user.
 
-<pre>
+## CSS
+
+### Selectors
+
+Prefer classes over id's, classes have a lower specificity and can be overridden, id's can only be overridden by `!important` tags or inline styles.
+
+```css
 /* BAD */
 div#ad-placement { }
 
 /* GOOD */
 .ad-placement { }
-</pre>
+```
 
-<p>Favor low specificity in selectors, try not to nest selectors more than 3 deep, create a new class if needed</p>
+Favor low specificity in selectors, try not to nest selectors more than 3 deep, create a new class if needed
 
-<pre>
+```css
 /* BAD */
 div#ad-placement ul > li > a { }
 
 /* GOOD */
 .ad-placement--link { }
-</pre>
+```
 
-<p>Never use !important to override a style, if !important is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to override all other styles. For example, when adding validation styles to form fields.</p>
+Never use `!important` to override a style, if `!important` is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to override all other styles. For example, when adding validation styles to form fields.</p>
 
-<h3>CSS style guide</h3>
-<p>Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be agreed upon. </p>
+### Style Guide
 
-<p><small>style guide reference links:</small></p>
-<ul>
-  <li><a href="http://getbem.com/">BEM</a></li>
-  <li><a href="https://smacss.com/">SMACSS</a></li>
-  <li><a href="https://acss.io">Atomic CSS</a></li>
-</ul>
+Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be agreed upon.
 
-<h2>Javascript</h2>
+> Reference links:
+>
+> - [BEM](http://getbem.com/)
+> - [SMACSS](https://smacss.com/)
+> - [Atomic CSS](https://acss.io)
+
+## Javascript
 
 <h3>Javascript code standards:</h3>
 
