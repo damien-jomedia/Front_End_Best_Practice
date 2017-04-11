@@ -42,7 +42,7 @@ The module folder should contains styles that apply to specific components, modu
 
 ## Selectors
 
-### **AVOID** ID selectors.
+### **Avoid**: ID selectors.
 
 ```scss
 /* DON'T */
@@ -52,4 +52,17 @@ The module folder should contains styles that apply to specific components, modu
 .ad-placement { }
 ```
 
-### **AVOID** element selectors.
+### **Avoid**: Element selectors.
+
+Using plain element selectors simply add complexity to the project as it grows.
+
+```scss
+/* DON'T */
+.folder > span { }
+.folder span:nth-child(2) { }
+
+/* DO */
+.folder { }
+.folder-span { }
+.folder-span-secondary { }
+```
