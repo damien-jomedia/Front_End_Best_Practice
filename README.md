@@ -5,6 +5,7 @@
 ## Guides
 - [General Guidelines](/dev/guidelines.md)
 - [Javascript / Node.js](/dev/js.md): Code style, syntax, tools, best practices, etc.
+- [SASS / CSS](/dev/sass.md): Code style, syntax, tools, best practices, etc.
 - [GitHub](/dev/github.md): How to use git efficiently as a team, commands, etc.
 - [Deployments](dev/deployments.md): Deployment processes, Travis configuration & tips.
 - [Services](/dev/services.md): Services available to developers.
