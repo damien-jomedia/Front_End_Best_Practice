@@ -66,3 +66,15 @@ Using plain element selectors simply add complexity to the project as it grows.
 .folder-span { }
 .folder-span-secondary { }
 ```
+
+### **Avoid**: Specificity
+
+Do not attach an element to a class or use immediate child operators (unless absolutely necessary). They add pointless complexity, makes it harder to override styles and decrease browser performance when applying styles.
+
+```scss
+/* DON'T */
+div.content > img.thumbnail { }
+
+/* DO */
+.content .thumbnail { }
+```
