@@ -242,5 +242,5 @@ Different units should be used depending on the property. In general, the **rem*
 - **border-width**: px
 - **margin / padding**: rem, em or px
 - **font-size:** rem or em
-- ***elements* min-,max-,width / min-,max-,height**: rem, em or px
-- ***media queries* min-width / max-width*: rem or em *(identical behavior)*
+- **elements > min-,max-,width / min-,max-,height**: rem, em or px
+- **media queries > min-width / max-width**: rem or em *(identical behavior)*
