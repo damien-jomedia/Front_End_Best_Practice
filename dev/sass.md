@@ -25,6 +25,7 @@ The base folder should contains the following items:
 - Global Element Styles (no classes / IDs): e.g. head, body, a, etc.
 - Grid
 - Colors Palette
+- Animations
 
 ### Layout
 
@@ -38,11 +39,13 @@ The layout folder should contains styles that are common to all pages on the sit
 
 ### Module
 
-The module folder should contains styles that apply to specific components, modules, pages, etc.
+The module folder should contains styles that apply to specific components, modules, pages, etc. Basically anything that doesn't fit in the Base or Layout categories.
 
 ## Selectors
 
 ### **Avoid**: ID selectors.
+
+IDs should not be used for CSS at all.
 
 ```scss
 /* BAD */
@@ -54,12 +57,13 @@ The module folder should contains styles that apply to specific components, modu
 
 ### **Avoid**: Element selectors.
 
-Using plain element selectors simply add complexity to the project as it grows.
+Using plain element selectors simply add complexity to the project as it grows. Define classes for all elements instead.
 
 ```scss
 /* BAD */
 .folder > span { }
 .folder span:nth-child(2) { }
+custom-element-tag { }
 
 /* GOOD */
 .folder { }
@@ -103,3 +107,12 @@ Nesting should be limited to at most 3 levels deep.
   &-title { }
 }
 ```
+
+## States
+
+States are classes that changes the behavior / look of another class, such as active, featured, shown, hidden, position, etc.
+
+States should be prefixed by either:
+- **is-** for states affecting the current element only.
+- **has-** for states affecting child content.
+
