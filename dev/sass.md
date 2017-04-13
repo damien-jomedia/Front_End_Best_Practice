@@ -24,6 +24,7 @@ Standards and rules to follow are defined per team / project.
   - [**Avoid**: !important](#avoid-important)
 - [Colors](#colors)
   - [Material Design mixin](#material-design-mixin)
+- [Comments](#comments)
 - [Media Queries](#media-queries)
 - [Units](#units)
 
@@ -69,7 +70,7 @@ The module folder should contains styles that apply to specific components, modu
 
 ### Formatting
 
-- Selectors should be written in kebab-case *(e.g. some-element-class)*.
+- Selectors (and variables) should be written in kebab-case *(e.g. some-element-class)*.
 - When using multiple selectors in a rule declaration, give each selector its own line.
 - Put a space before the opening brace { in rule declarations.
 - Put closing braces } of rule declarations on a new line.
@@ -117,7 +118,7 @@ div.content > img.thumbnail { }
 
 ### **Avoid**: Deep Nesting
 
-Nesting should be limited to at most 3 levels deep.
+Nesting should be limited to **at most 3 levels deep**.
 
 ```scss
 /* BAD */
@@ -198,6 +199,8 @@ States should be prefixed by either:
 ### Formatting
 
 - In properties, put a space after, but not before, the : character.
+- Do not put units when the value is 0. *(e.g. border-width: 0;)*
+- Use `border: 0;` instead of `border: none;` to specify that a style has no border.
 
 ### Ordering
 
@@ -280,6 +283,14 @@ Playster is using the [Material Design color palette](https://www.materialui.co/
 ```
 
 The mixin should be used when defining colors and greyscale (with the exception of black and white).
+
+## Comments
+
+- Prefer line comments (// in SCSS) to block comments.
+- Prefer comments on their own line. Avoid end-of-line comments.
+- Write detailed comments only for code that isn't self-documenting:
+  - Uses of z-index
+  - Complex media queries
 
 ## Media Queries
 
