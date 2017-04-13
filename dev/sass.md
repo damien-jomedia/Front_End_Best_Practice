@@ -5,6 +5,11 @@
 
 Standards and rules to follow are defined per team / project.
 
+- [Code Style](#code-style)
+- [Categorizing CSS Rules](#categorizing-css-rules)
+- [Selectors](#selectors)
+- [States](#states)
+
 ## Code Style
 
 The style guide presented here is a mix of SMACSS and BEM best practices.
