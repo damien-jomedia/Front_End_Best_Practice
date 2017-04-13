@@ -9,7 +9,7 @@ Standards and rules to follow are defined per team / project.
 - [Categorizing CSS Rules](#categorizing-css-rules)
   - [Base](#base)
   - [Layout](#layout)
-  - [Module / Components](#module-components)
+  - [Module / Components](#module--components)
 - [Selectors](#selectors)
   - [Formatting](#formatting)
   - [**Avoid**: ID selectors](#avoid-id-selectors)
