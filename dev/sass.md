@@ -113,6 +113,14 @@ Nesting should be limited to at most 3 levels deep.
 }
 ```
 
+As you can see in the example above, you can use the `&-` syntax to specify children elements without nesting them. The `.banner` selector above would produce the following output:
+
+```css
+.banner { }
+.banner-featured { }
+.banner-title { }
+```
+
 ## States
 
 States are classes that changes the behavior / look of another class, such as active, featured, shown, hidden, position, etc.
