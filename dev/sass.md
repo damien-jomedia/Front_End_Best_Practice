@@ -121,3 +121,31 @@ States should be prefixed by either:
 - **is-** for states affecting the current element only.
 - **has-** for states affecting child content.
 
+```scss
+.content {
+  background-color: #FFF;
+
+  &.is-featured {
+    background-color: #555;
+  }
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.item-list {
+  margin-left: 0;
+  
+  &.has-children {
+    margin-left: 50px;
+  }
+  
+  &-item {
+    color: #000;
+    
+    &.is-active {
+      color: #F00;
+    }
+  }
+}
+```
