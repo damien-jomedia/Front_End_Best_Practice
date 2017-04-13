@@ -11,6 +11,10 @@ Standards and rules to follow are defined per team / project.
   - [Layout](#layout)
   - [Module](#module)
 - [Selectors](#selectors)
+  - **Avoid**: ID selectors
+  - **Avoid**: Element selectors
+  - **Avoid**: Specificity
+  - **Avoid**: Deep Nesting
 - [States](#states)
 - [Properties](#properties)
 - [Colors](#colors)
@@ -55,7 +59,7 @@ The module folder should contains styles that apply to specific components, modu
 
 ## Selectors
 
-### **Avoid**: ID selectors.
+### **Avoid**: ID selectors
 
 IDs should not be used for CSS at all.
 
@@ -67,7 +71,7 @@ IDs should not be used for CSS at all.
 .ad-placement { }
 ```
 
-### **Avoid**: Element selectors.
+### **Avoid**: Element selectors
 
 Using plain element selectors simply add complexity to the project as it grows. Define classes for all elements instead.
 
