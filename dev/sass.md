@@ -175,7 +175,7 @@ States should be prefixed by either:
 
 Do not include browser prefix such as `-webkit-`, `-moz-`, `-ms-` and `-o-` when defining properties. Only include the W3C standard property. Prefixes should be handled by the compiler only.
 
-### Colors
+## Colors
 
 **Use defined variables or color mixins!** Avoid defining color codes directly unless they are unique to that element across the project (which is very rare). However, white `#FFF` and black `#000` values should be written as such.
 
@@ -193,6 +193,17 @@ When defining color opacity, use the `rgba(x,x,x,x)` syntax when using greyscale
 }
 ```
 
-## Values
+### Material Design Mixin
+
+Playster is using the [Material Design color palette](https://www.materialui.co/colors) across the site. A mixin is available when defining colors:
+
+```scss
+.content {
+  color: mc('orange', '500');
+  background-color: mc('teal', '800');
+}
+```
+
+The mixin should be used when defining colors (and greyscale with the exception of black and white).
 
 ## Media Queries
