@@ -18,6 +18,7 @@ Standards and rules to follow are defined per team / project.
   - [**Avoid**: Deep Nesting](#avoid-deep-nesting)
 - [States](#states)
 - [Properties](#properties)
+  - [Formatting](#formatting-1)
   - [**Avoid**: Browser-specific prefixes](#avoid-browser-specific-prefixes)
   - [**Avoid**: !important](#avoid-important)
 - [Colors](#colors)
