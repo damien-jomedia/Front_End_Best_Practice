@@ -45,10 +45,10 @@ The module folder should contains styles that apply to specific components, modu
 ### **Avoid**: ID selectors.
 
 ```scss
-/* DON'T */
+/* BAD */
 #ad-placement { }
 
-/* DO */
+/* GOOD */
 .ad-placement { }
 ```
 
@@ -57,11 +57,11 @@ The module folder should contains styles that apply to specific components, modu
 Using plain element selectors simply add complexity to the project as it grows.
 
 ```scss
-/* DON'T */
+/* BAD */
 .folder > span { }
 .folder span:nth-child(2) { }
 
-/* DO */
+/* GOOD */
 .folder { }
 .folder-span { }
 .folder-span-secondary { }
@@ -72,9 +72,34 @@ Using plain element selectors simply add complexity to the project as it grows.
 Do not attach an element to a class or use immediate child operators (unless absolutely necessary). They add pointless complexity, makes it harder to override styles and decrease browser performance when applying styles.
 
 ```scss
-/* DON'T */
+/* BAD */
 div.content > img.thumbnail { }
 
-/* DO */
+/* GOOD */
 .content .thumbnail { }
+```
+
+### **Avoid**: Deep Nesting
+
+Nesting should be limited to at most 3 levels deep.
+
+```scss
+/* BAD */
+.content {
+  .section {
+    .banner {
+      &-featured {
+        &-title { }
+      }
+    }
+  }
+}
+
+/* DO */
+.content { }
+.section { }
+.banner {
+  &-featured { }
+  &-title { }
+}
 ```
