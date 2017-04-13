@@ -11,12 +11,13 @@ Standards and rules to follow are defined per team / project.
   - [Layout](#layout)
   - [Module](#module)
 - [Selectors](#selectors)
-  - **Avoid**: ID selectors
-  - **Avoid**: Element selectors
-  - **Avoid**: Specificity
-  - **Avoid**: Deep Nesting
+  - [**Avoid**: ID selectors](#avoid-id-selectors)
+  - [**Avoid**: Element selectors](#avoid-element-selectors)
+  - [**Avoid**: Specificity](#avoid-specificity)
+  - [**Avoid**: Deep Nesting](#avoid-deep-nesting)
 - [States](#states)
 - [Properties](#properties)
+  - [**Avoid**: Browser-specific prefixes](#avoid-browser-specific-prefixes)
 - [Colors](#colors)
   - [Material Design mixin](#material-design-mixin)
 - [Media Queries](#media-queries)
