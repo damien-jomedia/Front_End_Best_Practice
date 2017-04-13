@@ -233,3 +233,13 @@ When defining media queries for responsive layouts, values should **always** be 
 @media screen and (max-width: $media-mobile) { }
 @media screen and (min-width: $media-mobile) and (max-width: $media-tablet) { }
 ```
+
+## Units
+
+Different units should be used depending on the property:
+
+- **border-width**: px
+- **margin / padding**: rem, em or px
+- **font-size:** rem or em
+- ***elements* (min/max-)width / (min/max-)height**: rem, em or px
+- ***media queries* (min-width and max-width)**: rem or em (identical behavior)
