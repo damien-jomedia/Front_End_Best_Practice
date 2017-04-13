@@ -169,3 +169,30 @@ States should be prefixed by either:
 }
 ```
 
+## Properties
+
+### **Avoid**: Browser-specific prefixes
+
+Do not include browser prefix such as `-webkit-`, `-moz-`, `-ms-` and `-o-` when defining properties. Only include the W3C standard property. Prefixes should be handled by the compiler only.
+
+### Colors
+
+**Use defined variables or color mixins!** Avoid defining color codes directly unless they are unique to that element across the project (which is very rare). However, white `#FFF` and black `#000` values should be written as such.
+
+In the rare cases you must use HEX codes, use the 3 characters version when all channels have the same value (e.g. greyscale).
+
+When defining color opacity, use the `rgba(x,x,x,x)` syntax when using greyscale values and `rgba($var, .7)`:
+
+```scss
+.content {
+  background-color: rgba(0,0,0,.75);
+}
+
+.content {
+  background-color: rgba($color-variable, .4);
+}
+```
+
+## Values
+
+## Media Queries
