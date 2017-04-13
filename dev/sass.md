@@ -213,7 +213,7 @@ States should be prefixed by either:
     }
     ```
 
-2. @include declarations
+2. `@include` declarations
 
     Grouping `@include`s at the end makes it easier to read the entire selector.
 
@@ -240,7 +240,7 @@ States should be prefixed by either:
         margin-right: 10px;
       }
     }
-```
+    ```
 
 ### **Avoid**: Browser-specific prefixes
 
