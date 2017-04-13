@@ -218,6 +218,18 @@ Playster is using the [Material Design color palette](https://www.materialui.co/
 }
 ```
 
-The mixin should be used when defining colors (and greyscale with the exception of black and white).
+The mixin should be used when defining colors and greyscale (with the exception of black and white).
 
 ## Media Queries
+
+When defining media queries for responsive layouts, values should **always** be variables:
+
+```scss
+/* BAD */
+@media screen and (max-width: 25rem) { }
+@media screen and (min-width: 25rem) and (max-width: 50rem) { }
+
+/* GOOD */
+@media screen and (max-width: $media-mobile) { }
+@media screen and (min-width: $media-mobile) and (max-width: $media-tablet) { }
+```
