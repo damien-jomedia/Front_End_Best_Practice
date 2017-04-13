@@ -136,9 +136,17 @@ States should be prefixed by either:
 .item-list {
   margin-left: 0;
   
+  /* HAS- example */
+  
   &.has-children {
     margin-left: 50px;
+    
+    .item-list-item {
+      background-color: #CCC;
+    }
   }
+  
+  /* IS- example */
   
   &-item {
     color: #000;
