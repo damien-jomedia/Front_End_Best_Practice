@@ -18,6 +18,7 @@ Standards and rules to follow are defined per team / project.
 - [States](#states)
 - [Properties](#properties)
   - [**Avoid**: Browser-specific prefixes](#avoid-browser-specific-prefixes)
+  - [**Avoid**: !important](#avoid-important)
 - [Colors](#colors)
   - [Material Design mixin](#material-design-mixin)
 - [Media Queries](#media-queries)
@@ -183,6 +184,10 @@ States should be prefixed by either:
 ### **Avoid**: Browser-specific prefixes
 
 Do not include browser prefix such as `-webkit-`, `-moz-`, `-ms-` and `-o-` when defining properties. Only include the W3C standard property. Prefixes should be handled by the compiler only.
+
+### **Avoid**: !important
+
+Under (almost!) no circumstances should the `!important` qualifier be used.
 
 ## Colors
 
