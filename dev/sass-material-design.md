@@ -1,5 +1,7 @@
 # Material Design - Color Helper Mixin
 
+This mixin should placed in a file named `_colors.scss` and located in the `/base` folder.
+
 ```scss
 $material-colors: (
   'red': (
