@@ -11,6 +11,7 @@ Standards and rules to follow are defined per team / project.
   - [Layout](#layout)
   - [Module](#module)
 - [Selectors](#selectors)
+  - [Formatting](#formatting)
   - [**Avoid**: ID selectors](#avoid-id-selectors)
   - [**Avoid**: Element selectors](#avoid-element-selectors)
   - [**Avoid**: Specificity](#avoid-specificity)
@@ -61,6 +62,14 @@ The layout folder should contains styles that are common to all pages on the sit
 The module folder should contains styles that apply to specific components, modules, pages, etc. Basically anything that doesn't fit in the Base or Layout categories.
 
 ## Selectors
+
+### Formatting
+
+- Selectors should be written in kebab-case *(e.g. some-element-class)*.
+- When using multiple selectors in a rule declaration, give each selector its own line.
+- Put a space before the opening brace { in rule declarations.
+- Put closing braces } of rule declarations on a new line.
+- Put blank lines between rule declarations
 
 ### **Avoid**: ID selectors
 
@@ -182,6 +191,10 @@ States should be prefixed by either:
 
 ## Properties
 
+### Formatting
+
+- In properties, put a space after, but not before, the : character.
+
 ### **Avoid**: Browser-specific prefixes
 
 Do not include browser prefix such as `-webkit-`, `-moz-`, `-ms-` and `-o-` when defining properties. Only include the W3C standard property. Prefixes should be handled by the compiler only.
@@ -244,3 +257,5 @@ Different units should be used depending on the property. In general, the **rem*
 - **font-size:** rem or em
 - **elements > min-,max-,width / min-,max-,height**: rem, em or px
 - **media queries > min-width / max-width**: rem or em *(identical behavior)*
+
+> Pixel-based units should be avoided for media queries because of inconsistent behaviors on Safari.
