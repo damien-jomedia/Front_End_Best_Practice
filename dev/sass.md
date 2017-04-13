@@ -12,6 +12,10 @@ Standards and rules to follow are defined per team / project.
   - [Module](#module)
 - [Selectors](#selectors)
 - [States](#states)
+- [Properties](#properties)
+- [Colors](#colors)
+  - [Material Design mixin](#material-design-mixin)
+- [Media Queries](#media-queries)
 
 ## Code Style
 
