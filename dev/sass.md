@@ -284,6 +284,8 @@ Playster is using the [Material Design color palette](https://www.materialui.co/
 
 The mixin should be used when defining colors and greyscale (with the exception of black and white).
 
+A copy of the full mixin code can be found [here](/dev/sass-material-design).
+
 ## Comments
 
 - Prefer line comments (// in SCSS) to block comments.
