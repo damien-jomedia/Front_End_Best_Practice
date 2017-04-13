@@ -9,7 +9,7 @@ Standards and rules to follow are defined per team / project.
 - [Categorizing CSS Rules](#categorizing-css-rules)
   - [Base](#base)
   - [Layout](#layout)
-  - [Module](#module)
+  - [Module / Components](#module-components)
 - [Selectors](#selectors)
   - [Formatting](#formatting)
   - [**Avoid**: ID selectors](#avoid-id-selectors)
@@ -38,7 +38,7 @@ Always use the `.scss` syntax, never the old `.sass` syntax.
 
 - Base
 - Layout
-- Module
+- Module / Components
 
 ### Base
 
@@ -51,6 +51,7 @@ The base folder should contains the following items:
 - Grid
 - Colors Palette
 - Animations
+- Typography
 
 ### Layout
 
@@ -61,10 +62,11 @@ The layout folder should contains styles that are common to all pages on the sit
 - Navigation
 - Sidebar
 - Containers
+- Page Layouts
 
-### Module
+### Module / Components
 
-The module folder should contains styles that apply to specific components, modules, pages, etc. Basically anything that doesn't fit in the Base or Layout categories.
+The module / components folder should contains styles that apply to specific components, modules, pages, etc. Basically anything that doesn't fit in the Base or Layout categories.
 
 ## Selectors
 
