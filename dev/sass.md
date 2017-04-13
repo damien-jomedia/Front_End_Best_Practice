@@ -19,6 +19,7 @@ Standards and rules to follow are defined per team / project.
 - [States](#states)
 - [Properties](#properties)
   - [Formatting](#formatting-1)
+  - [Ordering](#ordering)
   - [**Avoid**: Browser-specific prefixes](#avoid-browser-specific-prefixes)
   - [**Avoid**: !important](#avoid-important)
 - [Colors](#colors)
@@ -29,6 +30,8 @@ Standards and rules to follow are defined per team / project.
 ## Code Style
 
 The style guide presented here is a mix of SMACSS and BEM best practices.
+
+Always use the `.scss` syntax, never the old `.sass` syntax.
 
 ## Categorizing CSS Rules
 
@@ -195,6 +198,49 @@ States should be prefixed by either:
 ### Formatting
 
 - In properties, put a space after, but not before, the : character.
+
+### Ordering
+
+1. Property definitions
+
+List all standard property declarations, anything that isn't an @include or a nested selector.
+
+```scss
+.btn-green {
+  background: green;
+  font-weight: bold;
+  // ...
+}
+```
+
+2. @include declarations
+
+Grouping `@include`s at the end makes it easier to read the entire selector.
+
+```scss
+.btn-green {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+  // ...
+}
+```
+
+3. Nested selectors
+
+Nested selectors, if necessary, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
+
+```scss
+.btn {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+
+  .icon {
+    margin-right: 10px;
+  }
+}
+```
 
 ### **Avoid**: Browser-specific prefixes
 
