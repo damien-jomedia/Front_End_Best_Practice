@@ -7,6 +7,9 @@ Standards and rules to follow are defined per team / project.
 
 - [Code Style](#code-style)
 - [Categorizing CSS Rules](#categorizing-css-rules)
+  - [Base](#base)
+  - [Layout](#layout)
+  - [Module](#module)
 - [Selectors](#selectors)
 - [States](#states)
 
@@ -123,7 +126,7 @@ As you can see in the example above, you can use the `&-` syntax to specify chil
 
 ## States
 
-States are classes that changes the behavior / look of another class, such as active, featured, shown, hidden, position, etc.
+States are classes that changes the behavior / look of another class, such as active, featured, shown, hidden, collapsed, pressed, position, etc.
 
 States should be prefixed by either:
 - **is-** for states affecting the current element only.
@@ -165,3 +168,4 @@ States should be prefixed by either:
   }
 }
 ```
+
