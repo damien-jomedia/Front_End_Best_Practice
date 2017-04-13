@@ -22,6 +22,7 @@ Standards and rules to follow are defined per team / project.
 - [Colors](#colors)
   - [Material Design mixin](#material-design-mixin)
 - [Media Queries](#media-queries)
+- [Units](#units)
 
 ## Code Style
 
@@ -236,10 +237,10 @@ When defining media queries for responsive layouts, values should **always** be 
 
 ## Units
 
-Different units should be used depending on the property:
+Different units should be used depending on the property. In general, the **rem** is preferable.
 
 - **border-width**: px
 - **margin / padding**: rem, em or px
 - **font-size:** rem or em
-- ***elements* (min/max-)width / (min/max-)height**: rem, em or px
-- ***media queries* (min-width and max-width)**: rem or em (identical behavior)
+- ***elements* min-,max-,width / min-,max-,height**: rem, em or px
+- ***media queries* min-width / max-width*: rem or em *(identical behavior)*
