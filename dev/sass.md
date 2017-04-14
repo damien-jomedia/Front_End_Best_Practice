@@ -127,8 +127,10 @@ Nesting should be limited to **at most 3 levels deep**.
 .content {
   .section {
     .banner {
-      &-featured {
-        &-title { }
+      .primary {
+        &-featured {
+          &-title { }
+        }
       }
     }
   }
