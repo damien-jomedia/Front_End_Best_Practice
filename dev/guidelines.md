@@ -44,42 +44,6 @@ Show appropriate response to a user interaction. For example: a button click, if
 ### Forms:
 User interaction with form fields should be validated, provide error messages for inputs filled out with invalid info. Form submits should trigger a loader or async processing message. Provide success and error responses to the user.
 
-## CSS
-
-### Selectors
-
-Prefer classes over id's, classes have a lower specificity and can be overridden, id's can only be overridden by `!important` tags or inline styles.
-
-```css
-/* BAD */
-div#ad-placement { }
-
-/* GOOD */
-.ad-placement { }
-```
-
-Favor low specificity in selectors, try not to nest selectors more than 3 deep, create a new class if needed
-
-```css
-/* BAD */
-div#ad-placement ul > li > a { }
-
-/* GOOD */
-.ad-placement-link { }
-```
-
-Never use `!important` to override a style, if `!important` is needed then your selectors are too specific and should be refactored. However the !important tag can be used in one situation and that is for applying state changes to elements, where a style absolutely has to override all other styles. For example, when adding validation styles to form fields.</p>
-
-### Style Guide
-
-Team should follow a css style guide. All css should read as if it was coded by one person. This style guide can be created within the team or a well known style guide can be agreed upon.
-
-> Reference links:
->
-> - [BEM](http://getbem.com/)
-> - [SMACSS](https://smacss.com/)
-> - [Atomic CSS](https://acss.io)
-
 ## Javascript
 
 ### Code Standards
