@@ -26,6 +26,30 @@ In most cases, developers should create a copy of the dev's master/develop branc
 
 #### With dev branch
 ![Github Fork Pr Flow](/uploads/diagrams/github-fork-pr-flow.png "Github Fork Pr Flow")
+
+## Semantic Commit Messages
+
+Use the following format when writing commit messages:
+
+```
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Summary in present tense.
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test.
+```
+
+Examples:
+
+- chore: add Oyster build script
+- docs: explain hat wobble
+- feat: add beta sequence
+- fix: remove broken confirmation message
+- refactor: share logic between 4d3d3d3 and flarhgunnstow
+- style: convert tabs to spaces
+- test: ensure Tayne retains clothing
+
 ## How-to
 ### Fork a branch
 From the project repository, click on the **Fork** button to make a copy to your personnal account:
