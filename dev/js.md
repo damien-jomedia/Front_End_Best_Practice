@@ -5,59 +5,71 @@
 
 Standards and rules to follow are defined per team / project.
 
-<img src="/uploads/logos/standardjs-logo.png" align="right" />
-
 ## Code Style
-### StandardJS
+### Javascript
 
-Standard JS code style should be followed for all javascript and node.js projects:  
-https://standardjs.com/
+We use a custom set of rules, loosely based on the Standard JS code style. These should be followed for all javascript and node.js projects.
 
 In short, the following rules apply:
 
 - **2 spaces** – for indentation, no tabs!
 - **Single quotes for strings** – except to avoid escaping
 - **No unused variables** – this one catches tons of bugs!
-- **No semicolons** – It's fine. Really!
+- **Semicolons are optional** - Be consistent with the current file usage of semicolons
 - **Never start a line with (, [, or a backtick**
 - **Space after keywords** `if (condition) { ... }`
-- **Space after function name** `function name (arg) { ... }`
 - **Always use === instead of ==** - but `obj == null` is allowed to check `null || undefined`.
-- **Always handle the node.js err function parameter**
 
 #### Code Linting
 
-The StandardJS CLI can check for errors in your code. 
+ESLint check for errors in your code.
 
-```sh
-# Install globally:
-npm install standard -g
+##### Installation
 
-# Install as dev dependency:
-npm install standard -D
+1. Install ESLint CLI globally:
+	```sh
+	npm install -g eslint
+	```
 
-# Validate Code:
-standard
+2. At the root of your project, create a new `.eslintrc` file, with the following content:
+	```json
+	{
+	  "extends": "playster"
+	}
+	```
 
-# Automatically fix basic errors (indentation, semi-colons, etc.)
-standard --fix
+3. At the root of your project, create a new `.npmrc` file, with the following content:
+	```
+	Coming soon
+	```
 
-# Check a specific file only
-standard file.js
+4. Install the shareable eslint config:
+	```sh
+	npm install --save-dev eslint-config-playster eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+	```
+
+##### Usage
+
+```bash
+# Check a single file
+eslint file.js
+
+# Check a directory
+eslint lib/**
+
+# Attempt to fix as many errors as possible automatically:
+eslint --fix
 ```
+
+Most IDEs also have an eslint plugin that can be installed to automatically highlight issues in your code.
 
 #### ECMAScript versions
 
 **ES6/ES2015** syntax is recommended. However, note that you cannot use `imports` natively in NodeJS. Code that is transpiled using Babel or other tools is not affected.
 
-<img src="/uploads/logos/semi-standardjs-logo.png" align="right" />
-
-### Semi-StandardJS
-
-Identical to the StandardJS style guide (see above) with the exception of semicolons. Semicolons are expected at the end of all statements.
-
 ### Typescript
 *todo*
+
 ## Build / Watch
 
 <img src="/uploads/logos/fusebox-logo.png" align="right" />
@@ -87,11 +99,6 @@ It's a good idea to add npm shortcuts pointing to your fusebox setup, e.g.:
 	}
 }
 ```
-
-<img src="/uploads/logos/gulp-logo.png" align="right" />
-
-### Gulp
-*todo*
 
 ## Tests
 All projects should have tests (when applicable).
@@ -180,19 +187,6 @@ The matcher should return an object like:
 }
 ```
 
-<img src="/uploads/logos/chaijs-mocha-logo.png" align="right" />
-
-### Mocha + Chai
-**Mocha** with **Chai** is a mature testing solution.
-
-- Mocha: http://mochajs.org/
-- Chai: http://chaijs.com/
-- Chai-as-promised: https://github.com/domenic/chai-as-promised
-
-```sh
-# Install
-npm install mocha chai chai-as-promised -D
-```
 ## Documentation
 ### JSDoc
 [JSDoc](http://usejsdoc.org/) is the most popular documentation generator for javascript.
@@ -217,5 +211,6 @@ In the above example:
 - The type and description of the return value is described.
 
 For more information on how to use JSDoc and all the available tags you can use, visit the [JSDoc website](http://usejsdoc.org/).
+
 ## IDEs
 For a list of recommended IDEs and their must-have extensions, read the [Tools & IDEs](/dev/tools-ides.md) page.
