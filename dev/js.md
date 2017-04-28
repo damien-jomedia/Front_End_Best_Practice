@@ -15,7 +15,7 @@ In short, the following rules apply:
 - **2 spaces** – for indentation, no tabs!
 - **Single quotes for strings** – except to avoid escaping
 - **No unused variables** – this one catches tons of bugs!
-- **Semicolons are optional**
+- **Semicolons are optional** - Be consistent with the current file usage of semicolons
 - **Never start a line with (, [, or a backtick**
 - **Space after keywords** `if (condition) { ... }`
 - **Always use === instead of ==** - but `obj == null` is allowed to check `null || undefined`.
